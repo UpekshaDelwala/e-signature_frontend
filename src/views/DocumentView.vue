@@ -1,6 +1,7 @@
 <template>
   <div class="document-view">
     <!-- Sidebar -->
+    <!--
     <div class="sidebar">
       <div class="logo">DirectSign</div>
       <ul>
@@ -9,14 +10,15 @@
         <li @click="navigateTo('Signed')">Signed</li>
       </ul>
     </div>
+    -->
 
     <!-- Main Content -->
-    <div class="main-content">
-      <!-- Header -->
+    <!--<div class="main-content">
+
       <header>
         <h1>Document</h1>
         <button class="logout-btn">Logout</button>
-      </header>
+      </header> -->
 
       <div class="content-wrapper">
         <!-- Document Area -->
@@ -85,6 +87,7 @@
       </div>
     </div>
 
+  <div>
     <!-- Modals -->
     <AddInviteeModal
         :is-open="showAddInviteeModal"

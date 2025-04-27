@@ -1,21 +1,8 @@
 <template>
   <div class="create-document">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo">DirectSign</div>
-      <ul>
-        <li class="active">Dashboard</li>
-        <li>Pending</li>
-        <li>Signed</li>
-      </ul>
-    </div>
-
     <!-- Main Content -->
     <div class="main-content">
-      <header>
-        <h1>Create new document</h1>
-        <button class="logout-btn">Logout</button>
-      </header>
+      <h1>Create new document</h1>
       <div class="content">
         <div class="options">
           <label>
