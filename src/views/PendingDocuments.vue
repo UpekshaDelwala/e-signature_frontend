@@ -1,6 +1,6 @@
 <template>
   <div class="pending-documents">
-    <!-- Sidebar -->
+    <!-- Sidebar
     <div class="sidebar">
       <div class="logo">DirectSign</div>
       <ul>
@@ -8,7 +8,7 @@
         <li class="active">Pending</li>
         <li @click="navigateTo('Signed')">Signed</li>
       </ul>
-    </div>
+    </div>-->
 
     <!-- Main Content -->
     <div class="main-content">

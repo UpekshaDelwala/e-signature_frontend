@@ -12,8 +12,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <v-app-bar title="Application bar">
-    <v-btn>test</v-btn>
+  <v-app-bar title="DirectSign">
+    <v-btn>LogOut</v-btn>
   </v-app-bar>
 
 </template>

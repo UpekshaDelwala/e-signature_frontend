@@ -9,11 +9,12 @@ name: "SideBar"
 <template>
 <!--  <aside class="sidebar" :class="{ 'sidebar-hidden': !sidebarVisible && isMobile }">-->
   <v-navigation-drawer>
-    <v-list-item title="My Application" subtitle="Vuetify"></v-list-item>
+
     <v-divider></v-divider>
-    <v-list-item link title="List Item 1"></v-list-item>
-    <v-list-item link title="List Item 2"></v-list-item>
-    <v-list-item link title="List Item 3"></v-list-item>
+    <v-list-item link title="Dashboard"></v-list-item>
+    <v-list-item link title="Pending"></v-list-item>
+    <v-list-item link title="Approved"></v-list-item>
+    <v-list-item link title="Declined"></v-list-item>
   </v-navigation-drawer>
 <!--  <aside class="sidebar" :class="{ 'sidebar-hidden': !sidebarVisible && isMobile }">-->
 <!--    <ul>-->

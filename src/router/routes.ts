@@ -10,6 +10,7 @@ import ESignDocument from "@/components/ESignDocument.vue";
 import DatePicker from "@/components/DatePicker.vue";
 import DocumentSignPage from "@/components/DocumentSignPage.vue";
 import MainLayout from "@/views/layout/MainLayout.vue";
+import AddInviteeModal from "@/components/AddInviteeModal.vue";
 
 const routes: RouteRecordRaw[]=[
     {
@@ -32,27 +33,30 @@ const routes: RouteRecordRaw[]=[
                 name: 'AddSignature',
                 component: AddSignature,
             },
+            {
+                path: '/create-document',
+                name: 'CreateDocument',
+                component: CreateDocument,
+            },
+            {
+                path: '/document-view/:documentUrl/:fileType',
+                name: 'DocumentView',
+                component: DocumentView,
+            },
+            {
+                path: '/pending-documents',
+                name: 'PendingDocuments',
+                component: PendingDocuments,
+            },
         ]
     },
+
     {
-        path: '/create-document',
-        name: 'CreateDocument',
-        component: CreateDocument,
-    },
-    {
-        path: '/document-view/:documentUrl/:fileType',
-        name: 'DocumentView',
-        component: DocumentView,
-    },{
         path: '/signature-model',
         name: 'SignatureModel',
         component: SignatureModel,
     },
     {
-        path: '/pending-documents',
-        name: 'PendingDocuments',
-        component: PendingDocuments,
-    },{
         path: '/esign-document',
         name: 'ESignDocument',
         component: ESignDocument,
@@ -76,6 +80,12 @@ const routes: RouteRecordRaw[]=[
         component: DocumentSignPage,
         props: true,
     },
+    {
+        path: '/b',
+        name: 'AddInviteeModal',
+        component: AddInviteeModal,
+    },
+
 ];
 
 export  {routes}
