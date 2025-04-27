@@ -1,58 +1,6 @@
 <template>
   <div id="app">
-    <!-- Top Bar -->
-    <header class="top-bar">
-      <div class="logo">
-        <h1 class="logo">DirectSign</h1>
-        <!-- Hamburger Menu for Mobile -->
-        <button class="hamburger" @click="toggleSidebar" v-if="isMobile">
-          <span class="hamburger-icon">☰</span>
-        </button>
-      </div>
-      <div class="user-actions">
-        <span class="user-name">Cameron Williamson</span>
-        <button class="logout-btn" @click="handleLogout">Logout</button>
-      </div>
-    </header>
-
-    <!-- Main Layout with Sidebar -->
-    <div class="main-layout">
-      <!-- Sidebar -->
-      <aside class="sidebar" :class="{ 'sidebar-hidden': !sidebarVisible && isMobile }">
-        <ul>
-          <li>
-            <router-link to="/" :class="{ active: $route.name === 'BusinessLetter' }">Dashboard</router-link>
-          </li>
-          <li>
-            <router-link to="/add-signature" :class="{ active: $route.name === 'AddSignature' }">E-Sign</router-link>
-          </li>
-          <li>
-            <router-link to="/history" :class="{ active: $route.name === 'History' }">History</router-link>
-          </li>
-          <li>
-            <router-link to="/signature-model" :class="{ active: $route.name === 'SignatureModel' }">Signature Model</router-link>
-          </li>
-        </ul>
-        <div class="sidebar-footer">
-          <span class="settings-icon">⚙️</span>
-        </div>
-      </aside>
-
-      <!-- Main Content -->
-      <main class="content">
-        <!-- Document Title and Action Buttons -->
-        <div class="document-header">
-          <h2>Document 1 of Agreement</h2>
-          <div class="action-buttons">
-            <button class="decline-btn" @click="handleDecline">Decline</button>
-            <button class="sign-btn" @click="handleSign">Sign</button>
-          </div>
-        </div>
-
-        <!-- Router View for Rendering Components -->
-        <router-view></router-view>
-      </main>
-    </div>
+  <router-view></router-view>
   </div>
 </template>
 
