@@ -9,6 +9,7 @@ import PendingDocuments from "@/views/PendingDocuments.vue";
 import ESignDocument from "@/components/ESignDocument.vue";
 import DatePicker from "@/components/DatePicker.vue";
 import DocumentSignPage from "@/components/DocumentSignPage.vue";
+import MainLayout from "@/views/layout/MainLayout.vue";
 
 const routes: RouteRecordRaw[]=[
     {
@@ -17,14 +18,21 @@ const routes: RouteRecordRaw[]=[
         component: LandingPage,
     },
     {
-        path: '/a',
-        name: 'BusinessLetter',
-        component: BusinessLetter,
-    },
-    {
-        path: '/add-signature',
-        name: 'AddSignature',
-        component: AddSignature,
+        path:"/sign",
+        name: "MainLayout",
+        component: MainLayout,
+        children:[
+            {
+                path: 'a',
+                name: 'BusinessLetter',
+                component: BusinessLetter,
+            },
+            {
+                path: 'add-signature',
+                name: 'AddSignature',
+                component: AddSignature,
+            },
+        ]
     },
     {
         path: '/create-document',
